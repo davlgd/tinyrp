@@ -45,7 +45,7 @@ func main() {
 	})
 
 	addr := ":" + port
-	log.Printf("Starting reverse proxy on %s", addr)
+	log.Printf("Starting Tiny Reverse Proxy on %s", addr)
 	log.Printf("Redirecting to: %s", targetURL)
 
 	if err := http.ListenAndServe(addr, nil); err != nil {
